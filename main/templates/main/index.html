@@ -4,19 +4,26 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=google">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href= "{% static 'main/style.css' %}">
     <title>Menu des Pizzas</title>
 </head>
 <body>
-    <div class="bloc">
-        <video src="https://www.youtube.com/embed/L_LUpnjgPso" title="Fireplace 10 hours full HD"></video>
-    </div>
-    <div class="centered">
-        <img src=" {% static 'main/images/main_logo.png' %} ">
-        <p>voir le menu</p>
-    </div>
     
+
+
+
+
+
+
+
+    <div class="centered">
+        <img src="{% static 'main/images/main_logo.png' %}">
+        <a href="{% url 'menu:index' %}">Voir le menu</a>
+    </div>
+  
+        
+       
 </body>
 </html>

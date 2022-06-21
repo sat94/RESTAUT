@@ -1,5 +1,4 @@
 body{
-    color: aliceblue;
     margin: 0px;
     background: url("images/main_background.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -8,8 +7,15 @@ body{
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;    
 }
-div .centered {
-    margin-top: 50%;
-    margin-left: 50%;
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%)
+}
+a {
+    display: block;
+    text-align: center;
+    color: red
+    
 }
