@@ -1,0 +1,15 @@
+body{
+    color: aliceblue;
+    margin: 0px;
+    background: url("images/main_background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -moz-background-size:cover;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+div .centered {
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%)
+}

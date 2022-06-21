@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "{% static 'menu/style.css' %}">
+    <title>Menu des Pizzas</title>
+</head>
+<body>
+    <img id="small" src=" {% static 'menu/images/small_logo.png' %} ">
+    <div class="titre">
+    <h1>Les pizzas</h1>
+    </div>
+    <div class="item">
+       {% for pizza in pizzas %}
+       <div class="liste">
+        <spam class="pizza"> {{pizza.nom}}</spam> 
+        <spam class="prix">{{pizza.prix | floatformat:2}} €</spam>
+        <spam class="ingredients">{{pizza.ingredients}}</spam>
+            {% if pizza.vegetarienne %}
+            <spam class="vege">Végétarien</spam>
+            {% endif%}
+       </div>
+       {% endfor %}
+    </div>
+    
+</body>
+</html>
